@@ -1,0 +1,99 @@
+{
+  "arch": "powerpc",
+  "crt-objects-fallback": "musl",
+  "crt-static-default": true,
+  "crt-static-respected": true,
+  "data-layout": "E-m:e-p:32:32-i64:64-n32",
+  "dynamic-linking": true,
+  "env": "musl",
+  "has-rpath": true,
+  "has-thread-local": true,
+  "is-builtin": false,
+  "llvm-target": "powerpc-unknown-linux-musl",
+  "max-atomic-width": 32,
+  "os": "linux",
+  "panic-strategy": "abort",
+  "position-independent-executables": true,
+  "post-link-objects-fallback": {
+    "dynamic-dylib": [
+      "crtendS.o",
+      "crtresxgpr.o",
+      "crtn.o"
+    ],
+    "dynamic-nopic-exe": [
+      "crtend.o",
+      "crtresxgpr.o",
+      "crtn.o"
+    ],
+    "dynamic-pic-exe": [
+      "crtendS.o",
+      "crtresxgpr.o",
+      "crtn.o"
+    ],
+    "static-dylib": [
+      "crtendS.o",
+      "crtresxgpr.o",
+      "crtn.o"
+    ],
+    "static-nopic-exe": [
+      "crtend.o",
+      "crtresxgpr.o",
+      "crtn.o"
+    ],
+    "static-pic-exe": [
+      "crtendS.o",
+      "crtresxgpr.o",
+      "crtn.o"
+    ]
+  },
+  "pre-link-args": {
+    "gcc": [
+      "-m32"
+    ]
+  },
+  "pre-link-objects-fallback": {
+    "dynamic-dylib": [
+      "crti.o",
+      "crtbeginS.o"
+    ],
+    "dynamic-nopic-exe": [
+      "crt1.o",
+      "crti.o",
+      "crtbegin.o"
+    ],
+    "dynamic-pic-exe": [
+      "Scrt1.o",
+      "crti.o",
+      "crtbeginS.o"
+    ],
+    "static-dylib": [
+      "crti.o",
+      "crtbeginS.o"
+    ],
+    "static-nopic-exe": [
+      "crt1.o",
+      "crti.o",
+      "crtbegin.o"
+    ],
+    "static-pic-exe": [
+      "rcrt1.o",
+      "crti.o",
+      "crtbeginS.o"
+    ]
+  },
+  "relro-level": "full",
+  "stack-probes": {
+    "kind": "inline"
+  },
+  "supported-split-debuginfo": [
+    "packed",
+    "unpacked",
+    "off"
+  ],
+  "target-endian": "big",
+  "target-family": [
+    "unix"
+  ],
+  "target-mcount": "_mcount",
+  "target-pointer-width": "32"
+}
