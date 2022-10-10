@@ -7,6 +7,7 @@ make -C ./libunwind-stub
 
 export CARGO_TARGET_POWERPC_UNKNOWN_LINUX_MUSL_LINKER='powerpc-linux-musl-gcc'
 export RUSTFLAGS="
+    --cfg has_std
     -C panic=abort
     -C linker-flavor=gcc
     -L ./libunwind-stub/
