@@ -17,38 +17,26 @@
   "post-link-objects-fallback": {
     "dynamic-dylib": [
       "crtendS.o",
-      "crtresxgpr.o",
-      "crtresxfpr.o",
       "crtn.o"
     ],
     "dynamic-nopic-exe": [
       "crtend.o",
-      "crtresxgpr.o",
-      "crtresxfpr.o",
       "crtn.o"
     ],
     "dynamic-pic-exe": [
       "crtendS.o",
-      "crtresxgpr.o",
-      "crtresxfpr.o",
       "crtn.o"
     ],
     "static-dylib": [
       "crtendS.o",
-      "crtresxgpr.o",
-      "crtresxfpr.o",
       "crtn.o"
     ],
     "static-nopic-exe": [
       "crtend.o",
-      "crtresxgpr.o",
-      "crtresxfpr.o",
       "crtn.o"
     ],
     "static-pic-exe": [
       "crtendS.o",
-      "crtresxgpr.o",
-      "crtresxfpr.o",
       "crtn.o"
     ]
   },
